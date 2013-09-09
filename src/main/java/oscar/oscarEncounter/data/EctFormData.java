@@ -346,10 +346,12 @@ public class EctFormData {
 		}
 
 		public String getCreated() {
+			MiscUtils.getLogger().info("****** This is the CREATED DATE: ***********" + created);
 			return (UtilDateUtilities.DateToString(created, "yy/MM/dd"));
 		}
 
 		public String getEdited() {
+			MiscUtils.getLogger().info("****** This is the EDITED DATE: ***********" + edited);
 			return (UtilDateUtilities.DateToString(edited, "yy/MM/dd HH:mm:ss"));
 		}
 

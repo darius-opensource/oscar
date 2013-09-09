@@ -35,6 +35,8 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import org.oscarehr.util.MiscUtils;
+
 public class UtilDateUtilities {
 
     public static Date StringToDate(String s)    {
@@ -63,7 +65,8 @@ public class UtilDateUtilities {
         return DateToString(date, defaultPattern, locale);
     }
     public static String DateToString(Date date, String spattern)    {
-    	return DateToString(date, spattern, defaultLocale);
+    	MiscUtils.getLogger().info("****** This is the result of NOW i.e. Today's return value: ***********" + Today());
+    	return DateUtils.getDate(date, spattern, defaultLocale);
     }
     public static String DateToString(Date date, String spattern, Locale locale)    {
         if(date != null) {
