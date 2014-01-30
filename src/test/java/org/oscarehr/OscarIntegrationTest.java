@@ -36,7 +36,7 @@ protected static DesiredCapabilities dCaps;
 	
 	@Before
 	public void openWebDriver() {
-		testServerPort = System.getProperty("test.server.port","9080");
+		testServerPort = System.getProperty("test.server.port","8080");
         
 		String display = System.getProperty("test.xvfb.display",null);
 		FirefoxBinary firefox = new FirefoxBinary();
