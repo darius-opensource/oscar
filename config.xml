@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_38" class="java.beans.XMLDecoder"> 
+ <object class="org.oscarehr.selenium.resources.Config"> 
+  <void property="EChartNoteOne"> 
+   <object class="org.oscarehr.selenium.resources.EChartNote"> 
+    <void property="noteContent"> 
+     <string>This is a test note</string> 
+    </void> 
+   </object> 
+  </void>
+  <void property="providerOneDetails"> 
+   <object class="org.oscarehr.selenium.resources.ProviderDetails"> 
+    <void property="lastName"> 
+     <string>Test</string> 
+    </void> 
+    <void property="firstName"> 
+     <string>Doctor</string> 
+    </void> 
+    <void property="providerType"> 
+     <string>doctor</string> 
+    </void> 
+    <void property="ohipNo"> 
+     <string>123456</string> 
+    </void> 
+    <void property="sex">
+ 	 <string>M</string>
+ 	</void>
+ 	<void property="dateOfBirth">
+ 	 <string>1990-03-03</string>
+ 	</void>
+ 	<void property="address">
+ 	 <string>123 test dr</string>
+ 	</void>
+ 	<void property="phone">
+ 	 <string>555-555-5555</string>
+ 	</void>
+ 	<void property="workphone">
+ 	 <string>111-111-1111</string>
+ 	</void>
+ 	<void property="email">
+ 	 <string>cave.johnson@aperturescience.com</string>
+ 	</void>
+   </object> 
+  </void> 
+  <void property="appointmentOneDetails"> 
+   <object class="org.oscarehr.selenium.resources.AppointmentDetails"> 
+    <void property="lastName"> 
+     <string>Testcase</string> 
+    </void> 
+    <void property="location"> 
+     <string>this location</string> 
+    </void> 
+    <void property="notes"> 
+     <string>no notes</string> 
+    </void> 
+    <void property="reason"> 
+     <string>no reason</string> 
+    </void> 
+    <void property="resources">
+ 	 <string>some resources</string>
+ 	</void>
+   </object> 
+  </void> 
+  <void property="appointmentTwoDetails"> 
+   <object class="org.oscarehr.selenium.resources.AppointmentDetails"> 
+    <void property="lastName"> 
+     <string>Testcase</string> 
+    </void> 
+    <void property="location"> 
+     <string>aperture labs</string> 
+    </void> 
+    <void property="notes"> 
+     <string>this is a test</string> 
+    </void> 
+    <void property="reason"> 
+     <string>for science</string> 
+    </void>
+    <void property="resources">
+     <string>all resources</string>
+    </void> 
+   </object> 
+  </void> 
+  <void property="badCredentials"> 
+   <object class="org.oscarehr.selenium.resources.LoginCredentials"> 
+    <void property="password"> 
+     <string>test</string> 
+    </void> 
+    <void property="pin"> 
+     <string>test</string> 
+    </void> 
+    <void property="username"> 
+     <string>test</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="goodCredentials"> 
+   <object class="org.oscarehr.selenium.resources.LoginCredentials"> 
+    <void property="password"> 
+     <string>mac2002</string> 
+    </void> 
+    <void property="pin"> 
+     <string>1117</string> 
+    </void> 
+    <void property="username"> 
+     <string>oscardoc</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="noCredentials"> 
+   <object class="org.oscarehr.selenium.resources.LoginCredentials"> 
+    <void property="password"> 
+     <string></string> 
+    </void> 
+    <void property="pin"> 
+     <string></string> 
+    </void> 
+    <void property="username"> 
+     <string></string> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="patientOneDemographicDetails"> 
+   <object class="org.oscarehr.selenium.resources.PatientDemographicDetails"> 
+    <void property="firstName"> 
+     <string>test</string> 
+    </void> 
+    <void property="lastName"> 
+     <string>Testcase</string> 
+    </void> 
+    <void property="yearOfBirth"> 
+     <string>1990</string> 
+    </void>
+    <void property="hin">
+     <string>1111222228</string>
+    </void>
+    <void property="ver">
+     <string>ON</string>
+    </void>
+    <void property="eff_date">
+     <string>2010-03-03</string>
+    </void>
+    <void property="hc_renew_date">
+     <string>2015-03-03</string>
+    </void>
+    <void property="provider">
+     <string>oscardoc,doctor</string>
+    </void>
+    <void property="rosterStatus">
+     <string>RO</string>
+    </void>
+    <void property="roster_date">
+     <string>2010-03-03</string>
+    </void>
+   </object> 
+  </void> 
+  <void property="rxPrescriptionOne"> 
+   <object class="org.oscarehr.selenium.resources.RxPrescription"> 
+    <void property="additionalNotes"> 
+     <string>for science</string> 
+    </void> 
+    <void property="duration"> 
+     <string>1</string> 
+    </void> 
+    <void property="durationUnit"> 
+     <string>W</string> 
+    </void> 
+    <void property="frequency"> 
+     <string>OD</string> 
+    </void> 
+    <void property="instructions"> 
+     <string>TAKE 1 TABLET OD PO FOR 1 WEEK</string> 
+    </void> 
+    <void property="maximum"> 
+     <string>1</string> 
+    </void> 
+    <void property="method"> 
+     <string>TAKE</string> 
+    </void> 
+    <void property="minimum"> 
+     <string>1</string> 
+    </void> 
+    <void property="prescriptionName"> 
+     <string>ASPIRIN 81MG</string> 
+    </void> 
+    <void property="quantity"> 
+     <string>7</string> 
+    </void> 
+    <void property="quantityStr"> 
+     <string>7</string> 
+    </void> 
+    <void property="repeats"> 
+     <string>0</string> 
+    </void> 
+    <void property="route"> 
+     <string>PO</string> 
+    </void> 
+   </object> 
+  </void>
+  <void property="scheduleSettings">
+   <object class="org.oscarehr.selenium.resources.ScheduleSettings">
+    <void property="providerId">
+     <string>oscardoc, doctor</string>
+    </void>
+    <void property="name">
+     <string>test</string>
+    </void>
+    <void property="summary">
+     <string>This is a test</string>
+    </void>
+    <void property="timeCode">
+     <string>1</string>
+    </void>
+    <void property="startDate">
+     <string>2013-02-01</string>
+    </void>
+    <void property="endDate">
+     <string>2013-02-28</string>
+    </void>
+   </object>
+  </void>
+ </object> 
+</java>
