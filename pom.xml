@@ -1117,13 +1117,13 @@
         <version>2.16</version>
         <configuration>
 							<systemPropertyVariables>
-								<test.server.port>9080</test.server.port>
+								<test.server.port>8080</test.server.port>
 								<test.xvfb.display>${test.xvfb.display}</test.xvfb.display>
                                 <phantomjs.binary.path>${phantomjs.binary}</phantomjs.binary.path>                                
 							</systemPropertyVariables>                
         
           <includes>
-            <include>**/*IntegrationTest.java</include>
+            <include>**/OscarIntegrationTest.java</include>
           </includes>
         </configuration>
         <executions>
