@@ -952,7 +952,7 @@
 	<artifactId>selenium_oscar</artifactId>
 	<version>0.0.1</version>
       <type>test-jar</type>
-      <scope>test</scope>	
+      <scope>integration-test</scope>	
     </dependency>    
 	</dependencies>
 
