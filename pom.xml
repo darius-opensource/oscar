@@ -1139,7 +1139,7 @@
 							</systemPropertyVariables>                
         
           <includes>
-            <include>**/OscarIntegrationTest.java</include>
+            <include>**/MasterSuite.*</include>
           </includes>
         </configuration>
         <executions>
