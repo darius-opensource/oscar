@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Config file contains the base URL that all tests will run on. 
+	 For testing purposes you should change the urlBase but do NOT commit changes to this file. -->
+<java version="1.6.0_38" class="java.beans.XMLDecoder">
+ <object class="org.oscarehr.selenium.resources.ConnectionConfig">
+  <void property="urlBase"> 
+   <string>http://localhost:8080/oscar</string> 
+  </void>
+  <void property="pageTimeout">
+   <long>45</long>
+  </void>
+ </object>
+</java>
