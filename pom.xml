@@ -1135,7 +1135,8 @@
 							<systemPropertyVariables>
 								<test.server.port>8080</test.server.port>
 								<test.xvfb.display>${test.xvfb.display}</test.xvfb.display>
-                                <phantomjs.binary.path>${phantomjs.binary}</phantomjs.binary.path>                                
+                                <phantomjs.binary.path>${phantomjs.binary}</phantomjs.binary.path>
+								<DISPLAY>${test.xvfb.display}</DISPLAY>
 							</systemPropertyVariables>
       <dependenciesToScan>
         <dependency>org.oscarehr:selenium_oscar</dependency>
