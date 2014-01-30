@@ -1139,7 +1139,7 @@
 							</systemPropertyVariables>                
         
           <includes>
-            <include>**/MasterSuite.*</include>
+            <include>**/MasterSuite.java</include>
           </includes>
         </configuration>
         <executions>
