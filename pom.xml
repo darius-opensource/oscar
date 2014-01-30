@@ -1136,10 +1136,13 @@
 								<test.server.port>8080</test.server.port>
 								<test.xvfb.display>${test.xvfb.display}</test.xvfb.display>
                                 <phantomjs.binary.path>${phantomjs.binary}</phantomjs.binary.path>                                
-							</systemPropertyVariables>                
+							</systemPropertyVariables>
+      <dependenciesToScan>
+        <dependency>org.oscarehr:selenium_oscar</dependency>
+      </dependenciesToScan>							
         
           <includes>
-            <include>**/MasterSuite.java</include>
+            <include>**/MasterSuite.*</include>
           </includes>
         </configuration>
         <executions>
