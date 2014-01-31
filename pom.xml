@@ -140,6 +140,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.4</version>
+			<scope>test integration-test</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -945,6 +946,7 @@
 	<groupId>org.oscarehr</groupId>
 	<artifactId>selenium_oscar</artifactId>
 	<version>0.0.1</version>
+	<scope>integration-test</scope>
     </dependency>
     <dependency>
 	<groupId>org.oscarehr</groupId>
