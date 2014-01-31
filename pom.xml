@@ -946,10 +946,17 @@
         <artifactId>commons-io</artifactId>
         <version>2.1</version>
     </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+<scope>integration-test</scope>			
+		</dependency>    
     <dependency>
 	<groupId>org.oscarehr</groupId>
 	<artifactId>selenium_oscar</artifactId>
 	<version>0.0.1</version>
+<scope>integration-test</scope>	
     </dependency>
     <dependency>
 	<groupId>org.oscarehr</groupId>
