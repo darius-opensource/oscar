@@ -968,28 +968,7 @@
           </resource>
         </resources>
 	<plugins>
-					<plugin>
-  <groupId>helper.plugin</groupId>
-  <artifactId>helper-maven-plugin</artifactId>
-
-  <version>1.0</version>
-    <configuration>
-<environmentVariables>
-  <property>
-    <name>DISPLAY</name>
-    <value>:2</value>
-  </property>
-</environmentVariables>
-  </configuration>
-        <executions>
-          <execution>
-            <phase>validate</phase>
-            <goals>
-              <goal>export</goal>
-            </goals>
-          </execution>
-        </executions>
-					</plugin>	
+						
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
