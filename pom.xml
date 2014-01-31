@@ -42,7 +42,7 @@
 	 <maven.antrun.skip>true</maven.antrun.skip>
 	 <maven.javadoc.skip>true</maven.javadoc.skip>
 	 <checkstyle.skip>true</checkstyle.skip>
-				<test.xvfb.display>:2</test.xvfb.display>	 
+				<test.xvfb.display>:21</test.xvfb.display>	 
 	</properties>
 
 	<repositories>
@@ -1120,19 +1120,17 @@
         <artifactId>maven-failsafe-plugin</artifactId>
         <version>2.16</version>
         <configuration>
-							<systemPropertyVariables>
-								<test.server.port>8080</test.server.port>
-								<test.xvfb.display>${test.xvfb.display}</test.xvfb.display>
-                                <phantomjs.binary.path>${phantomjs.binary}</phantomjs.binary.path>
-								<DISPLAY>${test.xvfb.display}</DISPLAY>
-							</systemPropertyVariables>
-      <dependenciesToScan>
-        <dependency>org.oscarehr:selenium_oscar</dependency>
-      </dependenciesToScan>							
-        
-          <includes>
-            <include>**/MasterSuite.*</include>
-          </includes>
+		<systemPropertyVariables>
+			<test.server.port>8080</test.server.port>
+			<test.xvfb.display>:21</test.xvfb.display>
+			<phantomjs.binary.path>${phantomjs.binary}</phantomjs.binary.path>
+		</systemPropertyVariables>
+	      <dependenciesToScan>
+	        <dependency>org.oscarehr:selenium_oscar</dependency>
+	      </dependenciesToScan>							
+	          <includes>
+	            <include>**/MasterSuite.*</include>
+	          </includes>
         </configuration>
         <executions>
           <execution>
@@ -1155,7 +1153,7 @@
 									<goal>xvfb</goal>
 								</goals>
 								<configuration>
-                    				<display>:2</display>
+                    				<display>:21</display>
                 				</configuration> 
 							</execution>
 						</executions>
