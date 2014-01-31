@@ -951,7 +951,6 @@
 	<artifactId>selenium_oscar</artifactId>
 	<version>0.0.1</version>
       <type>test-jar</type>
-<scope>integration-test</scope>      
     </dependency>    
 	</dependencies>
 
