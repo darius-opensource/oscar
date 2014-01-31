@@ -1118,7 +1118,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.16</version>
+        <version>2.6</version>
         <configuration>
 		<systemPropertyVariables>
 			<test.server.port>8080</test.server.port>
