@@ -945,7 +945,7 @@
 	<groupId>org.oscarehr</groupId>
 	<artifactId>selenium_oscar</artifactId>
 	<version>0.0.1</version>
-<scope>test</scope>	
+<scope>integration-test</scope>	
     </dependency>
     <dependency>
 	<groupId>org.oscarehr</groupId>
