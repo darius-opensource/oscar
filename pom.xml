@@ -81,6 +81,10 @@
 			<id>oscar_repo</id>
 			<url>http://oscarmcmaster.sourceforge.net/m2</url>
 		</pluginRepository>
+		<pluginRepository>
+			<id>oscar-artifacts</id>
+			<url>http://oscar-artifacts.sourceforge.net/m2</url>
+		</pluginRepository>		
 	</pluginRepositories>
 
 	<dependencies>
