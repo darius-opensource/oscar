@@ -1086,63 +1086,83 @@
           </execution>          
           </executions>
 </plugin>      
-      <plugin>
+<plugin>
         <groupId>org.mortbay.jetty</groupId>
-        <artifactId>jetty-maven-plugin</artifactId>
-        <version>7.6.14.v20131031</version>
+        <artifactId>maven-jetty-plugin</artifactId>
+        <version>6.1.14</version>
         <configuration>
-          <scanIntervalSeconds>10</scanIntervalSeconds>
-          <stopKey>STOP</stopKey>
-          <stopPort>9999</stopPort>
+                <scanIntervalSeconds>10</scanIntervalSeconds>
+                <stopKey>foo</stopKey>
+                <stopPort>9999</stopPort>
           <webApp>
             <contextPath>/</contextPath>
-          </webApp>
-          <connectors>
-            <connector
-              implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-              <port>28080</port>
-              <maxIdleTime>60000</maxIdleTime>
-            </connector>
-          </connectors>
+          </webApp>		
         </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.5</version>
-          </dependency>
-          <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.0.13</version>
-          </dependency>
-          <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-jsp</artifactId>
-            <version>7.6.14.v20131031</version>
-          </dependency>
-        </dependencies>
+<!-- Jetty dependencies -->
+<dependencies>
+    <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty</artifactId>
+        <version>6.1.14</version>
+        <type>jar</type>
+    </dependency>
+
+    <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-util</artifactId>
+        <version>6.1.14</version>
+        <type>jar</type>
+    </dependency>
+
+    <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-plus</artifactId>
+        <version>6.1.14</version>
+        <type>jar</type>
+    </dependency>
+
+    <!--jsp support for jetty, add the 2 following -->
+    <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jsp-2.1</artifactId>
+        <version>6.1.14</version>
+        <type>jar</type>
+    </dependency>
+    <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jsp-api-2.1</artifactId>
+        <version>6.1.14</version>
+        <type>jar</type>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.ant</groupId>
+        <artifactId>ant-antlr</artifactId>
+        <version>1.7.1</version>
+    </dependency>
+
+</dependencies>	
         <executions>
-          <execution>
-            <id>start-jetty</id>
-            <phase>pre-integration-test</phase>
-            <goals>
-              <goal>start</goal>
-            </goals>
-            <configuration>
-              <scanIntervalSeconds>0</scanIntervalSeconds>
-              <daemon>true</daemon>
-            </configuration>
-          </execution>
-          <execution>
-            <id>stop-jetty</id>
-            <phase>post-integration-test</phase>
-            <goals>
-              <goal>stop</goal>
-            </goals>
-          </execution>
+                <execution>
+                        <id>start-jetty</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                                <goal>run</goal>
+                        </goals>
+                        <configuration>
+                                <scanIntervalSeconds>0</scanIntervalSeconds>
+                                <daemon>true</daemon>
+                        </configuration>
+                </execution>
+                <execution>
+                        <id>stop-jetty</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                                <goal>stop</goal>
+                        </goals>
+                </execution>
         </executions>
-      </plugin>
+</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
