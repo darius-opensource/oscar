@@ -1101,7 +1101,7 @@
             <id>start-jetty</id>
             <phase>pre-integration-test</phase>
             <goals>
-              <goal>run</goal>
+              <goal>deploy-war</goal>
             </goals>
             <configuration>
               <scanIntervalSeconds>0</scanIntervalSeconds>
