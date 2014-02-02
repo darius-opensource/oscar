@@ -1030,6 +1030,7 @@
 <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>sql-maven-plugin</artifactId>
+                        <version>1.5</version>
 
                         <!-- JDBC Driver -->
                         <dependencies>
